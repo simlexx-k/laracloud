@@ -14,6 +14,8 @@ export interface NavItem {
     href: string;
     icon?: LucideIcon;
     isActive?: boolean;
+    children?: NavItem[]; // Add this line
+    isOpen?: boolean;
 }
 
 export interface SharedData {
